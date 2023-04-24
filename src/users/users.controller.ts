@@ -17,7 +17,7 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 
 import { CreateUserDto, UpdateUserDto } from './dto/user.dto';
-import { editFileName, imageFileFilter } from '../core/file-upload/file.upload';
+import { editFileName, imageFileFilter } from '../core';
 import { UsersService } from './users.service';
 
 @Controller('users')
